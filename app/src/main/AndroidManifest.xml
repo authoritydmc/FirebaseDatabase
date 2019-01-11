@@ -18,7 +18,16 @@
         </activity>
         <activity
             android:name=".ViewRoomMembersDetails"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".AddMembers" />
+        <activity
+            android:name=".MemberViewDetails"
+            android:parentActivityName=".ViewRoomMembersDetails"></activity>
     </application>
 
 </manifest>
