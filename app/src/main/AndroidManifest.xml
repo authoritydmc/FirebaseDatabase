@@ -17,17 +17,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ViewRoomMembersDetails"
+            android:name=".RoomDetails"
+            android:label="Room Details"
             android:parentActivityName=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".AddMembers" />
         <activity
-            android:name=".MemberViewDetails"
-            android:parentActivityName=".ViewRoomMembersDetails"></activity>
+            android:name=".AddMembers"
+            android:label="Add members" />
+        <activity
+            android:name=".ProfileMember"
+            android:parentActivityName=".RoomDetails"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView android:id="@+id/cardView_listmembers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardElevation="3dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <LinearLayout
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/cardView_listmembers_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/fvc"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:text="Name:"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

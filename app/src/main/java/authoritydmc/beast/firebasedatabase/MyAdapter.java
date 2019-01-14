@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -39,10 +38,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "you clicked on Room no" + (position + 1), Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(mcontext, ViewRoomMembersDetails.class);
+                //  Toast.makeText(v.getContext(), "you clicked on Room no" + (position + 1), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(mcontext, RoomDetails.class);
                 intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
-                intent.putExtra(ViewRoomMembersDetails.GET_ROOM_NO, String.valueOf(position + 1));
+                intent.putExtra(RoomDetails.GET_ROOM_NO, String.valueOf(position + 1));
                 mcontext.startActivity(intent);
 
 
@@ -53,7 +52,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 13;
+        return 20;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
